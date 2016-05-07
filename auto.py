@@ -1,11 +1,11 @@
 from twitter import Twitter, OAuth, TwitterHTTPError
 
 # put your twitter tokens, keys, secrets, and twitter handle in the following variables
-OAUTH_TOKEN = "701008448360546304-Ku95EZJtKXp5L4F1ojW3qb6vtbp4RFc"
-OAUTH_SECRET = "xNbw7conf2Ts7DlLLQVEuWyyHeuONcJKVYhM7ModmbmcY"
-CONSUMER_KEY = "vmDMiLJO7Y5nuPzM8BVim9t4f"
-CONSUMER_SECRET = "AcjAGfh8mu4niO1Q44xJgD0cBPJZkNrIwNmgSRdDTgN7YFbgtU"
-TWITTER_HANDLE = "contro_versial_"
+OAUTH_TOKEN = "728925276751663106-uRqKRjoKZvvtOct9ndNh2GJ6Y4crQ0j"
+OAUTH_SECRET = "Vt5sS5EgedifMOZ2YlhvTcecVuhOB4HQ772jVRikVFefO"
+CONSUMER_KEY = "8Up9awDfUzk3Azq8QCyc0zVSw"
+CONSUMER_SECRET = "j2JvXqB6jsMU6efFgAHITErUURS855Jadp62xNjF104sEcziyh"
+TWITTER_HANDLE = "influentialtwit"
 
 t = Twitter(auth=OAuth(OAUTH_TOKEN, OAUTH_SECRET,
             CONSUMER_KEY, CONSUMER_SECRET))
