@@ -11,7 +11,7 @@ t = Twitter(auth=OAuth(OAUTH_TOKEN, OAUTH_SECRET,
             CONSUMER_KEY, CONSUMER_SECRET))
 
 
-def search_tweets(q, count=50, result_type="recent"):
+def search_tweets(q, count=25, result_type="recent"):
     """
         Returns a list of tweets matching a certain phrase (hashtag, word, etc.)
     """
