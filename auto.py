@@ -40,7 +40,7 @@ def auto_fav(q, count=1, result_type="recent"):
             print "error: ", e
 
 
-def auto_follow(q, count=30, result_type="recent"):
+def auto_follow(q, count=10, result_type="recent"):
     """
         Follows anyone who tweets about a specific phrase (hashtag, word, etc.)
     """
