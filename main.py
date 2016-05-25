@@ -11,4 +11,3 @@ auto_fav("funny", count=1)
 
 auto_follow("lol", count=10)
 auto_follow("funny", count=10)
-time.sleep(5)
