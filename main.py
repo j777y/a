@@ -19,3 +19,6 @@ auto_follow("joke", count=1)
 auto_follow("amusing", count=1)
 auto_follow("humor", count=1)
 
+import time
+
+time.sleep(60)
