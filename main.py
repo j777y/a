@@ -6,17 +6,10 @@ import time
 
 auto_fav("lol", count=1)
 auto_fav("funny", count=1)
-auto_fav("humor", count=1)
-auto_fav("joke", count=1)
-auto_fav("omg", count=1)
-auto_fav("amusing", count=1)
 
 #auto follow 10 users who come when we search for keyword "followback"
 
 auto_follow("lol", count=1)
 auto_follow("funny", count=1)
 auto_follow("omg", count=1)
-auto_follow("joke", count=1)
-auto_follow("amusing", count=1)
-auto_follow("humor", count=1)
-time.sleep(60)
+time.sleep(5)
