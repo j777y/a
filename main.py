@@ -9,5 +9,5 @@ auto_fav("funny", count=1)
 
 #auto follow 10 users who come when we search for keyword "followback"
 
-auto_follow("lol", count=10)
-auto_follow("funny", count=10)
+auto_follow("lol", count=5)
+auto_follow("funny", count=5)
