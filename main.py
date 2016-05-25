@@ -1,5 +1,6 @@
 from auto import auto_follow
 from auto import auto_fav
+import time
 
 #this is a sample program to use the auto.py script
 
@@ -18,7 +19,4 @@ auto_follow("omg", count=1)
 auto_follow("joke", count=1)
 auto_follow("amusing", count=1)
 auto_follow("humor", count=1)
-
-import time
-
 time.sleep(60)
