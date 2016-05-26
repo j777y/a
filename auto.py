@@ -11,7 +11,7 @@ t = Twitter(auth=OAuth(OAUTH_TOKEN, OAUTH_SECRET,
             CONSUMER_KEY, CONSUMER_SECRET))
 
 
-def search_tweets(q, count=50, result_type="recent"):
+def search_tweets(q, count=100, result_type="recent"):
     """
         Returns a list of tweets matching a certain phrase (hashtag, word, etc.)
     """
@@ -19,7 +19,7 @@ def search_tweets(q, count=50, result_type="recent"):
     return t.search.tweets(q=q, result_type=result_type, count=count)
 
 
-def auto_fav(q, count=50, result_type="recent"):
+def auto_fav(q, count=5, result_type="recent"):
     """
         Favorites tweets that match a certain phrase (hashtag, word, etc.)
     """
