@@ -19,7 +19,7 @@ def search_tweets(q, count=50, result_type="recent"):
     return t.search.tweets(q=q, result_type=result_type, count=count)
 
 
-def auto_fav(q, count=1, result_type="recent"):
+def auto_fav(q, count=50, result_type="recent"):
     """
         Favorites tweets that match a certain phrase (hashtag, word, etc.)
     """
@@ -40,7 +40,7 @@ def auto_fav(q, count=1, result_type="recent"):
             print "error: ", e
 
 
-def auto_follow(q, count=10, result_type="recent"):
+def auto_follow(q, count=50, result_type="recent"):
     """
         Follows anyone who tweets about a specific phrase (hashtag, word, etc.)
     """
@@ -51,9 +51,9 @@ def auto_follow(q, count=10, result_type="recent"):
     for tweet in result['statuses']:
         try:
             if tweet['user']['screen_name'] != TWITTER_HANDLE and tweet['user']['id'] not in following:
-                if tweet['user']['followers_count'] > 20 and tweet['user']['friends_count'] > 20 :
+                if tweet['user']['followers_count'] > 2000 and tweet['user']['friends_count'] > 20000 :
                   ratio = tweet['user']['friends_count']/tweet['user']['followers_count']
-                  if ratio > 1.0:
+                  if ratio > 0.6:
                     t.friendships.create(user_id=tweet['user']['id'], follow=True)
                     following.update(set([tweet['user']['id']]))
                     print "followed " + tweet['user']['screen_name']
