@@ -1,1 +1,1 @@
-worker: python main.py
+worker: python twitter_follow_bot.py
