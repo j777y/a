@@ -11,7 +11,7 @@ auto_follow("beautiful", count=1)
 
 #auto follow 10 users who come when we search for keyword "followback"
 
-auto_fav("lol", count=1)
+auto_fav("lol", count=19)
 auto_fav("funny", count=1)
 auto_fav("amusing", count=1)
 auto_fav("beautiful", count=1)
