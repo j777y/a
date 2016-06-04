@@ -1,5 +1,4 @@
 twitter==1.17.0
-atexit
 praw
 cPickle
 pytldr
