@@ -1,5 +1,4 @@
 twitter==1.17.0
 praw
-Pickle
 pytldr
 requests
