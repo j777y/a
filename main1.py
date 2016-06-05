@@ -1,5 +1,5 @@
-from auto import auto_follow
-from auto import auto_fav
+from auto1 import auto_follow
+from auto1 import auto_fav
 import time
 
 #this is a sample program to use the auto.py script
