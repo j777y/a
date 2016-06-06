@@ -53,7 +53,7 @@ def auto_follow(q, count=10, result_type="recent"):
             if tweet['user']['screen_name'] != TWITTER_HANDLE and tweet['user']['id'] not in following:
                 if tweet['user']['followers_count'] > 2000 and tweet['user']['friends_count'] > 2000 :
                   ratio = tweet['user']['friends_count']/tweet['user']['followers_count']
-                  if ratio > 0.6:
+                  if ratio > 0.01:
                     t.friendships.create(user_id=tweet['user']['id'], follow=True)
                     following.update(set([tweet['user']['id']]))
                     print "followed " + tweet['user']['screen_name']
