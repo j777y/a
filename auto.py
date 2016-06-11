@@ -1,11 +1,11 @@
 from twitter import Twitter, OAuth, TwitterHTTPError
 
 # put your twitter tokens, keys, secrets, and twitter handle in the following variables
-OAUTH_TOKEN = ""
-OAUTH_SECRET = ""
-CONSUMER_KEY = ""
-CONSUMER_SECRET = ""
-TWITTER_HANDLE = ""
+OAUTH_TOKEN = "701008448360546304-zXYldDmLvUekBBUuKKz8MYaM6sjsTTA"
+OAUTH_SECRET = "LGJNMJ92J5kk8pChHbNCHMQ0gHf31EtUKEvUPwGLXrNk3"
+CONSUMER_KEY = "MM9LNwfsMcJ2tpXds4Z4hMrFW"
+CONSUMER_SECRET = "pelYS7wzOoNotQUEasM0pAskiKsB6LWyyM3TO3koakzP8KUXtU"
+TWITTER_HANDLE = "contro_versial_"
 
 t = Twitter(auth=OAuth(OAUTH_TOKEN, OAUTH_SECRET,
             CONSUMER_KEY, CONSUMER_SECRET))
@@ -100,6 +100,9 @@ def auto_unfollow_nonfollowers():
     for userid in not_following_back:
         if userid not in users_keep_following:
             t.friendships.destroy(user_id=userid)
+
+
+
 
 
 
