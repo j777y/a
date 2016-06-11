@@ -1,11 +1,11 @@
 from twitter import Twitter, OAuth, TwitterHTTPError
 
 # put your twitter tokens, keys, secrets, and twitter handle in the following variables
-OAUTH_TOKEN = "701008448360546304-zXYldDmLvUekBBUuKKz8MYaM6sjsTTA"
-OAUTH_SECRET = "LGJNMJ92J5kk8pChHbNCHMQ0gHf31EtUKEvUPwGLXrNk3"
-CONSUMER_KEY = "MM9LNwfsMcJ2tpXds4Z4hMrFW "
-CONSUMER_SECRET = "pelYS7wzOoNotQUEasM0pAskiKsB6LWyyM3TO3koakzP8KUXtU"
-TWITTER_HANDLE = "contro_versial_"
+OAUTH_TOKEN = ""
+OAUTH_SECRET = ""
+CONSUMER_KEY = ""
+CONSUMER_SECRET = ""
+TWITTER_HANDLE = ""
 
 t = Twitter(auth=OAuth(OAUTH_TOKEN, OAUTH_SECRET,
             CONSUMER_KEY, CONSUMER_SECRET))
@@ -19,7 +19,7 @@ def search_tweets(q, count=10, result_type="recent"):
     return t.search.tweets(q=q, result_type=result_type, count=count)
 
 
-def auto_fav(q, count=10, result_type="recent"):
+def auto_fav(q, count=1, result_type="recent"):
     """
         Favorites tweets that match a certain phrase (hashtag, word, etc.)
     """
@@ -53,7 +53,7 @@ def auto_follow(q, count=10, result_type="recent"):
             if tweet['user']['screen_name'] != TWITTER_HANDLE and tweet['user']['id'] not in following:
                 if tweet['user']['followers_count'] > 2000 and tweet['user']['friends_count'] > 2000 :
                   ratio = tweet['user']['friends_count']/tweet['user']['followers_count']
-                  if ratio > 0.01:
+                  if ratio > 0.6:
                     t.friendships.create(user_id=tweet['user']['id'], follow=True)
                     following.update(set([tweet['user']['id']]))
                     print "followed " + tweet['user']['screen_name']
