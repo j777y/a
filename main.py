@@ -1,4 +1,5 @@
 from auto import auto_fav
+from auto import auto_follow
 from twitter_follow_bot import auto_rt 
 from twitter_follow_bot import auto_follow_followers_for_user
 
@@ -6,6 +7,6 @@ from twitter_follow_bot import auto_follow_followers_for_user
 auto_rt("funny", count=10)
 auto_rt("lol", count=10)
 auto_rt("omg", count=10)
-auto_fav("teamfollow", count=1)
+auto_follow("teamfollow", count=1)
 auto_fav("teamfollowback", count=1)
-auto_follow_followers_for_user(influentialtwit, count=100)
+auto_follow_followers_for_user("influentialtwit", count=10)
