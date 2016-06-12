@@ -8,8 +8,8 @@ from pytldr.summarize.textrank import TextRankSummarizer
 from praw.errors import RateLimitExceeded, APIException
 from requests import HTTPError
 from requests.exceptions import ReadTimeout
- 
- 
+
+
 USER_AGENT = "Bitesize News Summaries 0.1"
 REDDIT_USER = "BitesizeNewsBot"
 REDDIT_PASSWORD = "XXXXXXXXXXXX"
