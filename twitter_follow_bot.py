@@ -33,7 +33,7 @@ t = Twitter(auth=OAuth(OAUTH_TOKEN, OAUTH_SECRET,
             CONSUMER_KEY, CONSUMER_SECRET))
 
 
-def search_tweets(q, count=100, result_type="recent"):
+def search_tweets(q, count=10, result_type="recent"):
     """
         Returns a list of tweets matching a certain phrase (hashtag, word, etc.)
     """
@@ -41,7 +41,7 @@ def search_tweets(q, count=100, result_type="recent"):
     return t.search.tweets(q=q, result_type=result_type, count=count)
 
 
-def auto_fav(q, count=100, result_type="recent"):
+def auto_fav(q, count=10, result_type="recent"):
     """
         Favorites tweets that match a certain phrase (hashtag, word, etc.)
     """
@@ -62,7 +62,7 @@ def auto_fav(q, count=100, result_type="recent"):
             print("error: %s" % (str(e)))
 
 
-def auto_rt(q, count=100, result_type="recent"):
+def auto_rt(q, count=10, result_type="recent"):
     """
         Retweets tweets that match a certain phrase (hashtag, word, etc.)
     """
@@ -107,7 +107,7 @@ def get_do_not_follow_list():
     return do_not_follow
 
 
-def auto_follow(q, count=100, result_type="recent"):
+def auto_follow(q, count=10, result_type="recent"):
     """
         Follows anyone who tweets about a specific phrase (hashtag, word, etc.)
     """

@@ -19,7 +19,7 @@ def search_tweets(q, count=10, result_type="recent"):
     return t.search.tweets(q=q, result_type=result_type, count=count)
 
 
-def auto_fav(q, count=1, result_type="recent"):
+def auto_fav(q, count=10, result_type="recent"):
     """
         Favorites tweets that match a certain phrase (hashtag, word, etc.)
     """
